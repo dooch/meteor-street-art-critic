@@ -4,7 +4,7 @@ Before you can run this project, you will need to install Meteor with Autoparts,
 
 Run the following commands in the Terminal below:
 
-1. `cd ~/workspace/Microscope/`
+1. `cd ~/workspace/sac/`
 2. `parts install meteor`
 3. `npm install -g meteorite`
 4. `mrt update`

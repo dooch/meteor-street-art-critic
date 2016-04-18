@@ -2,7 +2,8 @@
   <div class="post">
     <a href="#" class="upvote btn btn-default {{upvotedClass}}">⬆</a>
     <div class="post-content">
-      <h3><a href="{{url}}">{{title}}</a><span>{{domain}}</span></h3>
+      <h3><a href="{{url}}">{{title}}</a><span>streetartcritic.com</span></h3>
+      {{>image}}
       <p>
         {{pluralize votes "Vote"}},
         submitted by {{author}},
@@ -11,5 +12,17 @@
       </p>
     </div>
     <a href="{{pathFor 'postPage'}}" class="discuss btn btn-default">Discuss</a>
+  </div>
+</template>
+
+<template name="image">
+  <div class="row">
+    <div class="col-md-12">
+      <a href="{{url}}" target="_blank" class="thumbnail">
+        <!--<img src="{{url}}" />-->
+        <img width="1024px" src="{{url}}" />
+        <!--<img src="https://scontent-lax3-1.xx.fbcdn.net/hphotos-ash2/t31.0-8/10497873_671355209600760_4183134617247184324_o.jpg"/>-->
+      </a>
+    </div>
   </div>
 </template>
